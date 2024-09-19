@@ -5,7 +5,10 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
     color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
 #header-site{
@@ -92,6 +95,60 @@
     border-bottom: 1px solid #d49e18;
 }
 
+/*----------- sobre ------------------*/
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 40px 0;
+}
+#sec-sobre{
+    background-color: #d49e18;
+}
+.content-sobre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.content-sobre div{
+    width: 50%;
+}
+
+.texto-sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 0;
+    justify-content: center;
+}
+.texto-sobre h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+}
+.texto-sobre p{
+    color: #fff;
+}
+.texto-sobre a{
+    background-color: rgb(19, 91, 226);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    align-self: self-start;
+}
+.img-sobre img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 24px;
+    box-shadow: 0px 2px 20px 3px #00000070;
+}
+/*----------- carousel --------------*/
 .slide{
     width: max-content;
     height: 100%;
@@ -145,7 +202,7 @@
 
 .carousel{
     position: relative;
-    width: 50%;
+    width: 100%;
     height: 266px;
     margin: 0 auto;
 }
@@ -155,6 +212,26 @@
     overflow: hidden;
     transition: width .4s;
     height: 100%;
+}
+
+.nav{
+    position: absolute;
+    z-index: 50;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nav button{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.nav.nav-left{
+    left: -50px;
+}
+.nav.nav-right{
+    right: -50px;
 }
 
 @media (max-width: 525px) {v +
